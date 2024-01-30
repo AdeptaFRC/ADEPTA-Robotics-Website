@@ -49,8 +49,9 @@ body {
 .header {
     padding: 50px;
     text-align: center;
-    background-image: url("/imgs/52760459862_f6987855dd_o.jpg");
+    background-image:linear-gradient( rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.56) ), url("/imgs/8F5A5884.jpg");
     background-position: center;
+    background-size: 100%;
     color: white;
     font-size: 24px;
     margin-bottom: 100px; 
