@@ -377,7 +377,7 @@ h4{
 }
 
 .button-container:hover {
-    background-color: rgb(75, 2, 2);
+    background-color: rgba(75, 2, 2, 0.505);
 }
 
 .foundation {
@@ -399,7 +399,7 @@ h4{
 }
 
 .foundation button:hover {
-    background-color: rgb(75, 2, 2);
+    background-color: rgba(75, 2, 2, 0.505);
 }
 
 .members {
@@ -421,7 +421,7 @@ h4{
 }
 
 .members button:hover {
-    background-color: rgb(75, 2, 2);
+    background-color: rgba(75, 2, 2, 0.505);
 }
 
 .competitions {
@@ -443,7 +443,7 @@ h4{
 }
 
 .competitions button:hover {
-    background-color: rgb(75, 2, 2);
+    background-color: rgba(75, 2, 2, 0.505);
 }
 
 .teams {
@@ -465,7 +465,7 @@ h4{
 }
 
 .teams button:hover {
-    background-color: rgb(75, 2, 2);
+    background-color: rgba(75, 2, 2, 0.505);
 }
 
 /* ---------------------------------- People Media ---------------------------------- */
