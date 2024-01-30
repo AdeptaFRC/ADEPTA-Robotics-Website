@@ -49,6 +49,7 @@ body {
 .header {
     padding: 50px;
     text-align: center;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.549), rgba(0, 0, 0, 0.571) ), url("/imgs/BLUNW3V5JZDDPFKRHKZ3G2INQA.jpg");
     background-image: url("/imgs/52760459862_f6987855dd_o.jpg");
     background-position: center;
     color: white;
