@@ -1,0 +1,483 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #0F0F0F;
+}
+
+/* ---------------------------------- Header ---------------------------------- */
+
+.head {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 90%;
+    margin: auto;
+}
+
+.head a {
+    text-decoration: none;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    font-size: 1.15em;
+    padding: 2.5vh;
+    transition: 0.2s;
+    font-size: 1.3em;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.head a:hover {
+    color: #7495ce;
+    
+}
+
+.header {
+    padding: 50px;
+    text-align: center;
+    background-image: url("/imgs/52760459862_f6987855dd_o.jpg");
+    background-position: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 100px; 
+}
+
+/* ---------------------------------- Text ---------------------------------- */
+.LIRT{
+    text-align: center;
+    color: white;
+}
+
+/* ---------------------------------- Robot Overview ---------------------------------- */
+
+.image-container {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: url("/imgs/a1f97cbdcb612b8724b65cdc76a063d2ba1f6f9d.jpeg") center/cover no-repeat;
+    padding: 220px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ---------------------------------- Socail Meida ---------------------------------- */
+
+.links {
+    position: fixed;
+    top: 10px;
+    right: 80px;
+    display: flex;
+    
+}
+
+.fa {
+    margin-left: 10px; /* Add margin between buttons */
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+/* Additional styling for each social media button */
+.fa-instagram {
+    color: white;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-twitter {
+/*    background-color: #282A3A;*/
+    color: white;
+}
+
+.LIRT {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; /* Adjust text color as needed */
+}
+
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* ---------------------------------- Buttons ---------------------------------- */
+
+.sponsors{
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* ---------------------------------- Sponsors ---------------------------------- */
+
+.sponsors-text{
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+}
+
+.MacDonalds{
+    background-image: url("/imgs/sponsors/McDonald\'s_Golden_Arches.svg.webp");
+    background-size:contain; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.Formula1{
+    background-image: url("/imgs/sponsors/F1.svg.webp");
+    background-size:contain; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.Nasa{
+    background-image: url("/imgs/sponsors/NASA_logo.svg.png");
+    background-size:contain; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ---------------------------------- Buttons ---------------------------------- */
+
+button{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    margin: 3px;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+button span{
+    display: block;
+    margin-top: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* ---------------------------------- About Us H3 ---------------------------------- */
+
+.info-about-us{
+    width: 50%;
+    margin: auto;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+.info-about-us {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.foundation,
+.members,
+.competitions,
+.teams {
+    border: 1px solid #ccc; 
+    padding: 20px;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container button {
+    width: 230px;
+    height: 60px;
+    font-size: 18px;
+    border: 5px solid rgb(177, 36, 36);
+    transition: 0.2s;
+}
+
+.button-container button:hover {
+    background-color: rgb(75, 2, 2);
+}
+
+
+/* ---------------------------------- About Us ---------------------------------- */
+
+h4{
+    font-size: 2em;
+}
+
+.info-about-us {
+    text-align: center;
+}
+
+.foundation,
+.members,
+.competitions,
+.teams 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin between sections */
+    color: white;
+    border: 1px solid rgb(75, 2, 2);
+}
+
+
+
+
+/* ---------------------------------- About Us Buttons ---------------------------------- */
+
+.button-container {
+    width: 230px;
+    height: 60px;
+    font-size: 18px;
+    border: 5px solid rgb(177, 36, 36);
+    transition: 0.2s;
+    margin-top: 10px; /* Adjust spacing between text and button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container:hover {
+    background-color: rgb(75, 2, 2);
+}
+
+.foundation {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foundation button {
+    width: 230px;
+    height: 60px;
+    font-size: 18px;
+    border: 5px solid rgb(177, 36, 36); 
+    transition: 0.2s;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.foundation button:hover {
+    background-color: rgb(75, 2, 2);
+}
+
+.members {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.members button {
+    width: 230px;
+    height: 60px;
+    font-size: 18px;
+    border: 5px solid rgb(177, 36, 36); 
+    transition: 0.2s;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.members button:hover {
+    background-color: rgb(75, 2, 2);
+}
+
+.competitions {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.competitions button {
+    width: 230px;
+    height: 60px;
+    font-size: 18px;
+    border: 5px solid rgb(177, 36, 36); 
+    transition: 0.2s;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.competitions button:hover {
+    background-color: rgb(75, 2, 2);
+}
+
+.teams {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teams button {
+    width: 230px;
+    height: 60px;
+    font-size: 18px;
+    border: 5px solid rgb(177, 36, 36); 
+    transition: 0.2s;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.teams button:hover {
+    background-color: rgb(75, 2, 2);
+}
+
+/* ---------------------------------- Flip Cards ---------------------------------- */
+.grid-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column sizes */
+    justify-content: center;
+    gap: 10px;
+}
+
+.flip-card {
+    background-color: transparent;
+    height: 454px; /* Fixed height */
+    font-family: sans-serif;
+    width: 300px;
+    padding: 15px;
+}
+
+.flip-card {
+    background-color: transparent;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid #461111;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+  color: coral;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+     bisque 40%, rgb(255, 185, 160) 78%);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* ---------------------------------- Media quaeries ---------------------------------- */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing on smaller screens */
+    }
+
+    .head a {
+        padding: 10px; /* Adjusted padding for links on smaller screens */
+    }
+
+    .header {
+        padding: 30px; /* Adjusted padding for smaller screens */
+        font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+
+    .sponsors {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info-about-us {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
