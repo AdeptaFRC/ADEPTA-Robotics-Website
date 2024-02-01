@@ -54,7 +54,7 @@ body {
     background-size: 100%;
     color: white;
     font-size: 24px;
-    margin-bottom: 100px; 
+    margin-bottom: 50px; 
 }
 
 /* ---------------------------------- Text ---------------------------------- */
@@ -73,7 +73,7 @@ body {
 }
 
 .fa {
-    margin-left: 10px; /* Add margin between buttons */
+    margin-left: 10px; 
     padding: 10px;
     font-size: 30px;
     width: 20px;
@@ -83,7 +83,6 @@ body {
     transition: 0.2s;
 }
 
-/* Additional styling for each social media button */
 .fa-instagram {
     color: white;
 }
@@ -93,14 +92,13 @@ body {
 }
 
 .fa-twitter {
-/*    background-color: #282A3A;*/
     color: white;
 }
 
 .LIRT {
     text-align: center;
     margin-top: 20px;
-    color: #333; /* Adjust text color as needed */
+    color: #333; 
 }
 
   
@@ -108,6 +106,144 @@ body {
     opacity: 0.7;
 }
 
+/* ---------------------------------- About-the-teams-card ---------------------------------- */
+.team-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr)); /* Change the repeat value to 4 */
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.About-the-teams-card {
+    height: 80%;
+    background: rgb(193, 75, 75);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    flex-direction: column;
+}
+
+
+.teams-icons{
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Coder {
+    background-image: url("/imgs/Teams-Icons/user-avatar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Engeneers {
+    background-image: url("/imgs/Teams-Icons/engineer.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Mechanics {
+    background-image: url("/imgs/Teams-Icons/mechanical-gears-.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Electronics{
+    background-image: url("/imgs/Teams-Icons/cpu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.sponsors-text {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
 
 /* ---------------------------------- Grid ---------------------------------- */
 
@@ -172,6 +308,8 @@ h3{
     justify-content: center; 
     align-items: center; 
 }
+
+
 
 .foundation,
 .members,
