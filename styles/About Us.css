@@ -49,11 +49,12 @@ body {
 .header {
     padding: 50px;
     text-align: center;
-    background-image: url("/imgs/52760459862_f6987855dd_o.jpg");
+    background-image:linear-gradient( rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.56) ), url("/imgs/8F5A5884.jpg");
     background-position: center;
+    background-size: 100%;
     color: white;
     font-size: 24px;
-    margin-bottom: 100px; 
+    margin-bottom: 50px; 
 }
 
 /* ---------------------------------- Text ---------------------------------- */
@@ -61,21 +62,6 @@ body {
     text-align: center;
     color: white;
 }
-
-/* ---------------------------------- Robot Overview ---------------------------------- */
-
-.image-container {
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    background: url("/imgs/a1f97cbdcb612b8724b65cdc76a063d2ba1f6f9d.jpeg") center/cover no-repeat;
-    padding: 220px;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
 /* ---------------------------------- Socail Meida ---------------------------------- */
 
 .links {
@@ -83,11 +69,11 @@ body {
     top: 10px;
     right: 80px;
     display: flex;
-    
+    z-index: 1;
 }
 
 .fa {
-    margin-left: 10px; /* Add margin between buttons */
+    margin-left: 10px; 
     padding: 10px;
     font-size: 30px;
     width: 20px;
@@ -97,7 +83,6 @@ body {
     transition: 0.2s;
 }
 
-/* Additional styling for each social media button */
 .fa-instagram {
     color: white;
 }
@@ -107,14 +92,13 @@ body {
 }
 
 .fa-twitter {
-/*    background-color: #282A3A;*/
     color: white;
 }
 
 .LIRT {
     text-align: center;
     margin-top: 20px;
-    color: #333; /* Adjust text color as needed */
+    color: #333; 
 }
 
   
@@ -122,9 +106,35 @@ body {
     opacity: 0.7;
 }
 
-/* ---------------------------------- Buttons ---------------------------------- */
+/* ---------------------------------- About-the-teams-card ---------------------------------- */
+.team-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr)); /* Change the repeat value to 4 */
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
 
-.sponsors{
+.About-the-teams-card {
+    height: 80%;
+    background: rgb(193, 75, 75);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    flex-direction: column;
+}
+
+
+.teams-icons{
     padding: 10px;
     width: 50%;
     margin: auto;
@@ -132,43 +142,125 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 
-/* ---------------------------------- Sponsors ---------------------------------- */
+.card {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
 
-.sponsors-text{
-    margin-top: 80px;
+.Coder {
+    background-image: url("/imgs/Teams-Icons/user-avatar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Engeneers {
+    background-image: url("/imgs/Teams-Icons/engineer.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Mechanics {
+    background-image: url("/imgs/Teams-Icons/mechanical-gears-.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Electronics{
+    background-image: url("/imgs/Teams-Icons/cpu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.sponsors-text {
+    margin-top: 20px;
     text-align: center;
     color: white;
+    font-size: 1.5em;
 }
 
-.MacDonalds{
-    background-image: url("/imgs/sponsors/McDonald\'s_Golden_Arches.svg.webp");
-    background-size:contain; 
-    background-repeat: no-repeat;
-    background-position: center; 
-}
+/* ---------------------------------- Grid ---------------------------------- */
 
-.Formula1{
-    background-image: url("/imgs/sponsors/F1.svg.webp");
-    background-size:contain; 
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-
-.Nasa{
-    background-image: url("/imgs/sponsors/NASA_logo.svg.png");
-    background-size:contain; 
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-
-.sponsors{
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    row-gap: 50px;
+    padding: 10px;
+    color: rgb(177, 36, 36);
 }
-
+  
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
 /* ---------------------------------- Buttons ---------------------------------- */
 
 button{
@@ -217,6 +309,8 @@ h3{
     justify-content: center; 
     align-items: center; 
 }
+
+
 
 .foundation,
 .members,
@@ -268,9 +362,6 @@ h4{
     color: white;
     border: 1px solid rgb(75, 2, 2);
 }
-
-
-
 
 /* ---------------------------------- About Us Buttons ---------------------------------- */
 
@@ -378,99 +469,122 @@ h4{
     background-color: rgb(75, 2, 2);
 }
 
-/* ---------------------------------- Flip Cards ---------------------------------- */
-.grid-container {
-    width: 80%;
-    margin: auto;
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column sizes */
-    justify-content: center;
-    gap: 10px;
+
+/* ---------------------------------- Loading Animation ---------------------------------- */
+
+@keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+}
+  
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+  45%,
+  55% {
+    width: 6.2em;
+  } /* adjust width based on content */
+  90%,
+  100% {
+    width: 0;
+  }
 }
 
-.flip-card {
-    background-color: transparent;
-    height: 454px; /* Fixed height */
-    font-family: sans-serif;
-    width: 300px;
-    padding: 15px;
-}
-
-.flip-card {
-    background-color: transparent;
-    height: 254px;
-    perspective: 1000px;
-    font-family: sans-serif;
-}
-
-.title {
+.terminal-loader {
+  border: 0.1em solid #333;
+  background-color: #1a1a1a;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  margin: 0;
-}
-
-.flip-card-inner {
+  padding: 1.5em 1em;
+  width: 16em;
+  height: 10em;
+  margin: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+.terminal-header {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border: 1px solid #461111;
-  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background-color: #333;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0 0.4em;
+  box-sizing: border-box;
 }
 
-.flip-card-front {
-  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
-     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
-  color: coral;
+.terminal-controls {
+  float: right;
 }
 
-.flip-card-back {
-  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
-     bisque 40%, rgb(255, 185, 160) 78%);
-  color: white;
-  transform: rotateY(180deg);
+.control {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-left: 0.4em;
+  border-radius: 50%;
+  background-color: #777;
 }
+
+.control.close {
+  background-color: #e33;
+}
+
+.control.minimize {
+  background-color: #ee0;
+}
+
+.control.maximize {
+  background-color: #0b0;
+}
+
+.terminal-title {
+  float: left;
+  line-height: 1.5em;
+  color: #eee;
+}
+
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2em solid green; /* Cursor */
+  animation: typeAndDelete 4s steps(11) infinite,
+    blinkCursor 0.5s step-end infinite alternate;
+  margin-top: 1.5em;
+}
+
 
 
 /* ---------------------------------- Media quaeries ---------------------------------- */
 @media (max-width: 768px) {
     .head {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column;
         text-align: center;
     }
 
     .logo-container {
-        margin-right: 0; /* Remove right margin for smaller screens */
-        margin-bottom: 10px; /* Add bottom margin for spacing on smaller screens */
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
     .head a {
-        padding: 10px; /* Adjusted padding for links on smaller screens */
+        padding: 10px; 
     }
 
     .header {
-        padding: 30px; /* Adjusted padding for smaller screens */
-        font-size: 18px; /* Adjusted font size for smaller screens */
+        padding: 30px;
+        font-size: 18px; 
     }
 
     .sponsors {
@@ -480,21 +594,8 @@ h4{
     .info-about-us {
         grid-template-columns: repeat(1, 1fr); 
     }
-}
 
-@media screen and (max-width: 600px) {
-    /* Change to 1 column on small screens */
-    .cards-container {
-        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    .team-cards-container{
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
     }
 }
-
-@media screen and (min-width: 601px) and (max-width: 900px) {
-    /* Change to 2 columns on medium screens */
-    .cards-container {
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
-    }
-}
-
-
-
