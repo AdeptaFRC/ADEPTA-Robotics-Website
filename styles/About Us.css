@@ -49,6 +49,12 @@ body {
 .header {
     padding: 50px;
     text-align: center;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.56) ), url("/imgs/8F5A5884.jpg");
+    background-position: center;
+    background-size: 100%;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 50px; 
     background-image:linear-gradient( rgba(0, 0, 0, 0.549), rgba(0, 0, 0, 0.571) ), url("/imgs/BLUNW3V5JZDDPFKRHKZ3G2INQA.jpg");
     background-image: url("/imgs/52760459862_f6987855dd_o.jpg");
     background-position: center;
@@ -73,6 +79,7 @@ body {
 }
 
 .fa {
+    margin-left: 10px; 
     margin-left: 10px; /* Add margin between buttons */
     padding: 10px;
     font-size: 30px;
@@ -93,13 +100,13 @@ body {
 }
 
 .fa-twitter {
-/*    background-color: #282A3A;*/
     color: white;
 }
 
 .LIRT {
     text-align: center;
     margin-top: 20px;
+    color: #333; 
     color: #333; /* Adjust text color as needed */
 }
 
@@ -108,6 +115,146 @@ body {
     opacity: 0.7;
 }
 
+
+/* ---------------------------------- About-the-teams-card ---------------------------------- */
+.team-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr)); /* Change the repeat value to 4 */
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.About-the-teams-card {
+    height: 80%;
+    background: rgb(193, 75, 75);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    flex-direction: column;
+}
+
+
+.teams-icons{
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Coder {
+    background-image: url("/imgs/Teams-Icons/user-avatar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Engeneers {
+    background-image: url("/imgs/Teams-Icons/engineer.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Mechanics {
+    background-image: url("/imgs/Teams-Icons/mechanical-gears-.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Electronics{
+    background-image: url("/imgs/Teams-Icons/cpu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.sponsors-text {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
 
 /* ---------------------------------- Grid ---------------------------------- */
 
@@ -330,6 +477,7 @@ h4{
     background-color: rgb(75, 2, 2);
 }
 
+
 /* ---------------------------------- Flip Cards ---------------------------------- */
 .grid-container {
     width: 80%;
@@ -402,7 +550,6 @@ h4{
   color: white;
   transform: rotateY(180deg);
 }
-
 
 /* ---------------------------------- Loading Animation ---------------------------------- */
 
@@ -503,11 +650,23 @@ h4{
 /* ---------------------------------- Media quaeries ---------------------------------- */
 @media (max-width: 768px) {
     .head {
+        flex-direction: column;
         flex-direction: column; /* Stack items vertically on smaller screens */
         text-align: center;
     }
 
     .logo-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .head a {
+        padding: 10px; 
+    }
+
+    .header {
+        padding: 30px;
+        font-size: 18px; 
         margin-right: 0; /* Remove right margin for smaller screens */
         margin-bottom: 10px; /* Add bottom margin for spacing on smaller screens */
     }
@@ -527,5 +686,9 @@ h4{
 
     .info-about-us {
         grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .team-cards-container{
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
     }
 }
