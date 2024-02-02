@@ -123,7 +123,7 @@ h1{
     max-width: 1200px;
     width: 95%;
     margin: auto;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .slider-wrapper {
@@ -249,6 +249,7 @@ h1{
     padding: 220px;
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 50px;
 }
 
 /* ---------------------------------- Flip Cards ---------------------------------- */
