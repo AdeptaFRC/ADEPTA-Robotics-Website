@@ -8,10 +8,14 @@ body {
     padding: 0;
     height: 100vh;
     background-color: #0F0F0F;
+    
 }
 
 /* ---------------------------------- Header ---------------------------------- */
-
+::selection {
+    background-color: #9a1f1f;
+}
+  
 .head {
     text-align: center;
     display: flex;

@@ -8,9 +8,15 @@ body {
     padding: 0;
     height: 100vh;
     background-color: #0F0F0F;
+    box-sizing: border-box;
 }
 
 /* ---------------------------------- Header ---------------------------------- */
+::selection {
+    background-color: #9a1f1f;
+}
+  
+
 
 .head {
     text-align: center;
@@ -61,8 +67,6 @@ body {
     text-align: center;
     color: white;
 }
-
-
 
 /* ---------------------------------- Socail Meida ---------------------------------- */
 
@@ -227,7 +231,53 @@ h1{
     bottom: -10px;
 }
 
+/* ---------------------------------- Video ---------------------------------- */
+.video-text{
+    margin-bottom: 200px;
+}
+
+.wrapper{
+    margin: 150px auto;
+    width: 70%;
+}
+
+iframe{
+    max-width: 550px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+.text-box{
+    color: white;
+}
+
+.text-box h2{
+    font-size: 42px;
+}
+
+.text-box p{
+    font-size: 16px;
+}
+
+
+
+/* ----------------------------------  ---------------------------------- */
+
 /* ---------------------------------- Media quaeries ---------------------------------- */
+
+@media only screen and (max-width: 968px){
+    iframe{
+        max-width: 100%;
+        float:inline-start;
+        margin-bottom: 30px;
+    }
+
+    .text-box h2{
+        margin-bottom: -7px;
+    }
+}
+
 
 @media only screen and (max-width: 1023px) {
     .container{
