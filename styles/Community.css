@@ -1,0 +1,105 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #0F0F0F;
+    
+}
+
+/* ---------------------------------- Header ---------------------------------- */
+::selection {
+    background-color: #9a1f1f;
+}
+  
+.head {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 90%;
+    margin: auto;
+}
+
+.head a {
+    text-decoration: none;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    font-size: 1.15em;
+    padding: 2.5vh;
+    transition: 0.2s;
+    font-size: 1.3em;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.head a:hover {
+    color: #7495ce;
+    
+}
+
+.header {
+    padding: 50px;
+    text-align: center;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.56) ), url("/imgs/52760459862_f6987855dd_o.jpg");
+    background-position: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 100px; 
+}
+
+/* ---------------------------------- Media quaeries ---------------------------------- */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing on smaller screens */
+    }
+
+    .head a {
+        padding: 10px; /* Adjusted padding for links on smaller screens */
+    }
+
+    .header {
+        padding: 30px; /* Adjusted padding for smaller screens */
+        font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+
+    .sponsors {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info-about-us {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Change to 1 column on small screens */
+    .cards-container {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Change to 2 columns on medium screens */
+    .cards-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
