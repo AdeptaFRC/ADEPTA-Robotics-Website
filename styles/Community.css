@@ -60,6 +60,15 @@ body {
     margin-bottom: 100px; 
 }
 
+/* ---------------------------------- Footer ---------------------------------- */
+
+footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
 /* ---------------------------------- Media quaeries ---------------------------------- */
 @media (max-width: 768px) {
     .head {
