@@ -17,6 +17,9 @@ body {
 }
 
 /* ---------------------------------- Header ------------------------------------------------------------------------- */
+}
+
+/* ---------------------------------- Header ------------------------------------------------------------------------- */
 ::selection {
     background-color: #9a1f1f;
 }
@@ -60,6 +63,7 @@ body {
     padding: 50px;
     text-align: center;
     background-image: linear-gradient( rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.56) ), url("/imgs/5.03.23blog.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/imgs/20220304_FIRSTRobotics.jpg");
     background-position: center;
     background-size: 100%;
     
@@ -128,6 +132,7 @@ h1{
     width: 95%;
     margin: auto;
     margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 
 .slider-wrapper {
@@ -260,6 +265,61 @@ h1{
 
 .grid-container {
     width: 70%;
+}
+
+/* ---------------------------------- Media quaeries ---------------------------------- */
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+        display: none !important;
+    }
+
+    .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing on smaller screens */
+    }
+
+    .head a {
+        padding: 10px; /* Adjusted padding for links on smaller screens */
+    }
+
+    .header {
+        padding: 30px; /* Adjusted padding for smaller screens */
+        font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+
+    .sponsors {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info-about-us {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+.grid-container {
+    width: 80%;
     margin: auto;
     margin-top: 100px;
     display: grid;
