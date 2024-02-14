@@ -11,6 +11,10 @@ body {
 }
 
 /* ---------------------------------- Header ---------------------------------- */
+::selection {
+    background-color: #9a1f1f;
+}
+  
 
 .head {
     text-align: center;
@@ -58,9 +62,10 @@ body {
     background-image:linear-gradient( rgba(0, 0, 0, 0.549), rgba(0, 0, 0, 0.571) ), url("/imgs/BLUNW3V5JZDDPFKRHKZ3G2INQA.jpg");
     background-image: url("/imgs/52760459862_f6987855dd_o.jpg");
     background-position: center;
+    background-size: 100%;
     color: white;
     font-size: 24px;
-    margin-bottom: 100px; 
+    margin-bottom: 50px; 
 }
 
 /* ---------------------------------- Text ---------------------------------- */
@@ -90,7 +95,6 @@ body {
     transition: 0.2s;
 }
 
-/* Additional styling for each social media button */
 .fa-instagram {
     color: white;
 }
@@ -115,6 +119,174 @@ body {
     opacity: 0.7;
 }
 
+/* ---------------------------------- About-the-teams-card ---------------------------------- */
+.team-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr)); /* Change the repeat value to 4 */
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.About-the-teams-card {
+    height: 80%;
+    background: rgb(193, 75, 75);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    flex-direction: column;
+}
+
+
+.teams-icons{
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Coder {
+    background-image: url("/imgs/Teams-Icons/user-avatar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Engeneers {
+    background-image: url("/imgs/Teams-Icons/engineer.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Mechanics {
+    background-image: url("/imgs/Teams-Icons/mechanical-gears-.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Electronics{
+    background-image: url("/imgs/Teams-Icons/cpu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.sponsors-text {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* ---------------------------------- Images ---------------------------------- */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    margin-top: -40px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-text {
+    text-align: center;
+    color: white;
+}
 
 /* ---------------------------------- About-the-teams-card ---------------------------------- */
 .team-cards-container {
@@ -303,6 +475,7 @@ button:hover{
 .info-about-us{
     width: 50%;
     margin: auto;
+    margin-bottom: 70px;
 }
 
 h3{
@@ -319,6 +492,8 @@ h3{
     justify-content: center; 
     align-items: center; 
 }
+
+
 
 .foundation,
 .members,
@@ -477,7 +652,6 @@ h4{
     background-color: rgb(75, 2, 2);
 }
 
-
 /* ---------------------------------- Flip Cards ---------------------------------- */
 .grid-container {
     width: 80%;
@@ -550,7 +724,6 @@ h4{
   color: white;
   transform: rotateY(180deg);
 }
-
 /* ---------------------------------- Loading Animation ---------------------------------- */
 
 @keyframes blinkCursor {
@@ -645,7 +818,60 @@ h4{
   margin-top: 1.5em;
 }
 
+/* ---------------------------------- Summary ---------------------------------- */
+.summary-buttons{
+    margin-bottom: 30px;
+}
 
+details {
+    width: 80%;
+    margin: 0 auto ;
+    background: #282828;
+    margin-bottom: .5rem;
+    box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgb(183, 183, 183);
+  }
+  
+  summary {
+    padding: 1rem;
+    display: block;
+    background: #333;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  summary:before {
+    content: '';
+    border-width: .4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+  }
+  
+  /* THE MAGIC 🧙‍♀️ */
+  details[open] > summary:before {
+    transform: rotate(90deg);
+  }
+  
+  
+  details summary::-webkit-details-marker {
+    display:none;
+  }
+  
+  details > ul {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
 
 /* ---------------------------------- Media quaeries ---------------------------------- */
 @media (max-width: 768px) {
@@ -672,12 +898,12 @@ h4{
     }
 
     .head a {
-        padding: 10px; /* Adjusted padding for links on smaller screens */
+        padding: 10px; 
     }
 
     .header {
-        padding: 30px; /* Adjusted padding for smaller screens */
-        font-size: 18px; /* Adjusted font size for smaller screens */
+        padding: 30px;
+        font-size: 18px; 
     }
 
     .sponsors {

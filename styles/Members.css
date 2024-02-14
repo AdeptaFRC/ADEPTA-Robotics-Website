@@ -19,7 +19,11 @@ body {
 /* ---------------------------------- Header ------------------------------------------------------------------------- */
 }
 
-/* ---------------------------------- Header ---------------------------------- */
+/* ---------------------------------- Header ------------------------------------------------------------------------- */
+::selection {
+    background-color: #9a1f1f;
+}
+  
 
 .head {
     text-align: center;
@@ -69,12 +73,10 @@ body {
 }
 
 /* ---------------------------------- Text ------------------------------------------------------------------------- */
-
 .LIRT{
     text-align: center;
     color: white;
 }
-
 /* ---------------------------------- Socail Meida ------------------------------------------------------------------------- */
 
 .links {
@@ -120,7 +122,6 @@ body {
 .fa:hover {
     opacity: 0.7;
 }
-
 /* ---------------------------------- Srolling area ------------------------------------------------------------------------- */
 h1{
     color: white;
@@ -130,6 +131,7 @@ h1{
     max-width: 1200px;
     width: 95%;
     margin: auto;
+    margin-bottom: 150px;
     margin-bottom: 200px;
 }
 
@@ -256,6 +258,13 @@ h1{
     padding: 220px;
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 50px;
+}
+
+/* ---------------------------------- Flip Cards ---------------------------------- */
+
+.grid-container {
+    width: 70%;
 }
 
 /* ---------------------------------- Media quaeries ---------------------------------- */
@@ -381,3 +390,53 @@ h1{
   transform: rotateY(180deg);
 }
 
+/* ---------------------------------- Media quaeries ---------------------------------- */
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+        display: none !important;
+    }
+
+    .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing on smaller screens */
+    }
+
+    .head a {
+        padding: 10px; /* Adjusted padding for links on smaller screens */
+    }
+
+    .header {
+        padding: 30px; /* Adjusted padding for smaller screens */
+        font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+
+    .sponsors {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info-about-us {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
