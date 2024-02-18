@@ -330,6 +330,15 @@ h1{
   transform: rotateY(180deg);
 }
 
+/* ---------------------------------- Footer ---------------------------------- */
+
+footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
 /* ---------------------------------- Media quaeries ---------------------------------- */
 @media only screen and (max-width: 1023px) {
     .slider-wrapper .slide-button {
