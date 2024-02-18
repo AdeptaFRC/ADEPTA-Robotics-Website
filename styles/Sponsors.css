@@ -132,7 +132,7 @@ footer {
     }
 
     .header {
-        padding: 30px; 
+        padding: 30px;
         font-size: 18px;
     }
 
@@ -144,3 +144,4 @@ footer {
         grid-template-columns: repeat(1, 1fr); 
     }
 }
+
